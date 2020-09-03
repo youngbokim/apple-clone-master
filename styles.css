@@ -1,0 +1,459 @@
+@import "./reset.css";
+
+/* 전체 스타일 */
+
+* {
+  margin: 0;
+}
+
+body {
+  color: rgb(29, 29, 31);
+}
+
+/* 요소 스타일 */
+
+h1 {
+}
+
+h2 {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 66px;
+}
+
+h3 {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 31px;
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16.8px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #2997ff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2997ff;
+}
+
+a:active {
+  text-decoration: none;
+  color: #2997ff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #2997ff;
+}
+
+sup {
+  font-size: 8px;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  background-color: rgb(245, 245, 247);
+}
+
+/* 클래스 스타일  */
+
+/* 공통 클래스 */
+
+.h4_large_40 {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 44px;
+}
+
+.h5_large_21 {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 26px;
+}
+
+.p_large_17 {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 27px;
+}
+
+.text_align_center {
+  text-align: center;
+}
+
+.bg_color_white {
+  background-color: white;
+}
+.bg_color_dark {
+  background-color: rgb(19, 19, 19);
+}
+.bg_color_gray_250 {
+  background-color: rgb(250, 250, 250);
+}
+
+.color_white_245 {
+  color: rgb(245, 245, 247);
+}
+.color_gray_134 {
+  color: rgb(134, 134, 139);
+}
+
+.margin_top_6 {
+  margin-top: 6px;
+}
+.margin_top_7 {
+  margin-top: 7px;
+}
+.margin_top_14 {
+  margin-top: 14px;
+}
+.margin_bottom_12 {
+  margin-top: 14px;
+}
+
+/* Navigation 클래스  */
+
+.nav_menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  height: 44px;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav_menu_logo {
+  line-height: 44px;
+  opacity: 0.8;
+}
+.nav_menu_logo:hover {
+  opacity: 1;
+}
+.nav_menu_item {
+  margin: 0 0 0 80px;
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 44px;
+  color: rgb(245, 245, 247);
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.nav_menu_item:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+/*  고객 공지사항 클래스 */
+
+.alert_banner {
+  padding: 16px 0;
+}
+
+/*  Hero iPhoneSE 클래스 */
+
+.hero_iphonese {
+  padding-top: 47px;
+  height: 645px;
+  background-image: url("img/iphonese.jpg");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 12px;
+}
+
+.link_more_wrap {
+  width: 230px;
+  margin: 14 auto 0;
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 32px;
+  color: #2997ff;
+}
+
+.link_buy {
+  margin: 0 0 0 18px;
+}
+
+/*  Hero iPhone11 클래스 */
+
+.hero_iphone11 {
+  padding-top: 44px;
+  background-image: url("img/iphone11.jpg");
+  height: 662px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 12px;
+}
+
+/*  Hero iPad Pro 클래스 */
+
+.hero_ipadpro {
+  padding-top: 44px;
+  background-image: url("img/ipadpro.jpg");
+  height: 662px;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 12px;
+}
+
+/* Promotion Wrap 클래스 */
+
+.promotion_wrap {
+  display: flex;
+  padding: 0 12px;
+}
+
+/*  Promotion iMac 클래스 */
+
+.promotion_imac {
+  padding-top: 47px;
+  background-image: url("img/imac.jpg");
+  width: 50%;
+  height: 535px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 12px;
+  background-color: rgb(242, 242, 242);
+}
+
+.promotion_link_more_wrap {
+  width: 200px;
+  margin: 14 auto 0;
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: #2997ff;
+}
+
+.promotion_link_buy {
+  margin: 0 0 0 28px;
+}
+
+/*  Promotion iPhone11 Pro 클래스 */
+
+.promotion_iphone11pro {
+  padding-top: 47px;
+  background-image: url("img/iphone11pro.jpg");
+  width: 50%;
+  height: 535px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 12px;
+  background-color: rgb(29, 29, 31);
+  margin: 0 0 0 12px;
+}
+
+.promotion_link_more_wrap {
+  width: 200px;
+  margin: 14 auto 0;
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: #2997ff;
+}
+
+.promotion_link_buy {
+  margin: 0 0 0 28px;
+}
+
+/*  Promotion Watch 클래스 */
+
+.promotion_watch {
+  padding-top: 47px;
+  background-image: url("img/applewatch5.jpg");
+  width: 50%;
+  height: 535px;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 12px;
+  background-color: rgb(250, 250, 250);
+}
+
+.promotion_watch img {
+  width: 0%;
+}
+
+/*  Promotion Macbook Pro 클래스 */
+
+.promotion_macbookpro {
+  padding-top: 47px;
+  background-image: url("img/macbookpro.jpg");
+  width: 50%;
+  height: 535px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 12px;
+  background-color: rgb(22, 22, 23);
+  margin: 0 0 0 12px;
+}
+
+/*  Promotion Airpods 클래스 */
+
+.promotion_airpods {
+  padding-top: 47px;
+  background-image: url("img/airpods.jpg");
+  width: 50%;
+  height: 535px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 12px;
+  background-color: rgb(250, 250, 250);
+}
+
+/*  Promotion Opensales 클래스 */
+
+.promotion_opensales {
+  padding-top: 47px;
+  background-image: url("img/promotion_opensales.jpg");
+  width: 50%;
+  height: 535px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 12px;
+  background-color: rgb(250, 250, 250);
+  margin: 0 0 0 12px;
+}
+
+/* 푸터 클래스 */
+.footer_wrap {
+  width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.footer_note {
+  padding: 17px 0 11px;
+  border-bottom: 1px solid #d2d2d7;
+  color: rgb(134, 134, 139);
+}
+
+.footer_menu {
+  display: flex;
+}
+
+.footer_menu_column {
+  width: 200px;
+  padding-top: 20px;
+}
+
+.footer_menu_group {
+  list-style: none;
+  padding: 0;
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  color: rgb(81, 81, 84);
+}
+
+.footer_menu_item {
+  margin: 0 0 6.8px;
+}
+.footer_menu_group li {
+  margin: 0 0 6.8px;
+  color: rgb(134, 134, 139);
+}
+
+.footer_menu_group li:first-child {
+  font: weight 600;
+  color: rgb(29, 29, 31);
+}
+
+.font_weight_600 {
+  font-weight: 600;
+}
+.color_gray_29 {
+  color: rgb(29, 29, 31);
+}
+.footer_contact {
+  border-bottom: 1px solid #d2d2d7;
+  padding: 0 0 7px;
+  margin: 0 0 8px;
+  color: rgb(134, 134, 139);
+}
+
+.footer_copyright_wrap {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(134, 134, 139);
+}
+
+.footer_copyright {
+  margin: 5px 0;
+}
+
+.footer_copyright a {
+  color: rgb(134, 134, 139);
+  padding: 0 12px 0;
+  border-right: 1px solid rgb(134, 134, 139);
+}
+
+.footer_copyright a:hover {
+  color: rgb(29, 29, 31);
+}
+
+.footer_address {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 14.667px;
+  color: rgb(81, 81, 84);
+}
+
+.footer_global {
+  font-size: 12px;
+}
