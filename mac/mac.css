@@ -1,0 +1,355 @@
+#gnb {
+  position: static;
+}
+
+/* LNB 스타일 */
+#lnb_mac {
+  padding: 8px 0;
+  height: 100px;
+  background-color: rgb(245, 245, 247, 0.6);
+}
+.lnb_menu {
+  display: flex;
+  width: 1120px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.lnb_menu a {
+  text-align: center;
+}
+
+.lnb_menu a:hover {
+  text-decoration: none;
+  color: #2997ff;
+}
+.lnb_menu span:hover {
+  color: #2997ff;
+  text-decoration: none;
+}
+
+.lnb_menu span {
+  display: block;
+  color: rgb(29, 29, 31);
+
+  font-family: "SF Pro KR";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+}
+
+.lnb_menu_icon_macbookair,
+.lnb_menu_icon_macbookpro13,
+.lnb_menu_icon_macbookpro16,
+.lnb_menu_icon_imac,
+.lnb_menu_icon_imacpro,
+.lnb_menu_icon_macpro,
+.lnb_menu_icon_macmini,
+.lnb_menu_icon_maccomp,
+.lnb_menu_icon_prodisplayxdr,
+.lnb_menu_icon_macacc,
+.lnb_menu_icon_macosx {
+  height: 54px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin: 0 auto 4px;
+  display: block;
+}
+
+.lnb_menu_icon_macbookair {
+  width: 52px;
+  background-image: url(img/macbookair.svg);
+  background-size: 52px 54px;
+}
+
+.lnb_menu_icon_macbookpro13 {
+  width: 54px;
+  background-image: url(img/macbookpro13.svg);
+  background-size: 54px 54px;
+}
+
+.lnb_menu_icon_macbookpro16 {
+  width: 60px;
+  background-image: url(img/macbookpro16.svg);
+  background-size: 60px 54px;
+}
+
+.lnb_menu_icon_imac {
+  width: 48px;
+  background-image: url(img/imac.svg);
+  background-size: 48px 54px;
+}
+
+.lnb_menu_icon_imacpro {
+  width: 48px;
+  background-image: url(img/imacpro.svg);
+  background-size: 48px 54px;
+}
+
+.lnb_menu_icon_macpro {
+  width: 37px;
+  background-image: url(img/macpro.svg);
+  background-size: 37px 54px;
+}
+
+.lnb_menu_icon_macmini {
+  width: 28px;
+  background-image: url(img/macmini.svg);
+  background-size: 28px 54px;
+}
+
+.lnb_menu_icon_maccomp {
+  width: 70px;
+  background-image: url(img/compare.svg);
+  background-size: 70px 54px;
+}
+
+.lnb_menu_icon_prodisplayxdr {
+  width: 48px;
+  background-image: url(img/prodisplayxdr.svg);
+  background-size: 48px 54px;
+}
+
+.lnb_menu_icon_macacc {
+  width: 29px;
+  background-image: url(img/accessory.svg);
+  background-size: 48px 54px;
+}
+
+.lnb_menu_icon_macosx {
+  width: 42px;
+  background-image: url(img/macosx.svg);
+  background-size: 42px 54px;
+}
+
+.lnb_menu li .lnb_menu_span_new {
+  color: rgb(191, 72, 0);
+  font-family: "SF Pro KR";
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 12px;
+}
+
+/* .lnb_menu_span_new {
+   color:rgb(191,72,0);
+   font-family:'SF Pro KR';
+   font-size:10px;
+   font-weight: 400;
+   font-style: normal;
+   line-height: 12px;; 
+} */
+
+/* Hero 섹션 스타일 */
+
+.hero_imac_wrap,
+.hero_macbookair_wrap,
+.hero_macbookpro_wrap {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.hero_imac_text {
+  width: 33.333%;
+}
+
+.hero_imac_text span {
+  display: block;
+  margin: 0 0 4px;
+}
+
+.hero_imac_text h3 {
+  line-height: 35px;
+}
+
+.hero_imac_img {
+  text-align: center;
+  width: 66.666%;
+}
+
+.h2_subtitle_21 {
+  font-family: "SF Pro KR", "SF Pro Display", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 29px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hero_imac_link {
+  margin: 30px 0;
+}
+
+.hero_imac_link a:first-child {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 18px;
+  background-color: rgb(0, 113, 227);
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin-top: 25px;
+}
+
+.hero_imac_more {
+  margin-top: 24px;
+  font-size: 18px;
+}
+
+.h2_new {
+  color: rgb(255, 94, 0);
+  font-size: 24px;
+}
+
+.hero_imac_img figure {
+  width: 653px;
+  height: 550px;
+  background-image: url("img/hero_imac.jpg");
+  background-size: 653px 550px;
+  background-repeat: no-repeat;
+  margin: 0 0 0 -10px;
+}
+
+/* Macbook Air 스타일 */
+
+.hero_macbookair_img figure {
+  width: 980px;
+  height: 150px;
+  background-image: url("img/hero_macbookair.jpg");
+  background-size: 980px 150px;
+  background-repeat: no-repeat;
+  margin: 0 0 0 -400px;
+}
+
+.hero_macbookair_text {
+  margin-left: 55px;
+}
+
+.hero_macbookair_link a:first-child {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 18px;
+  background-color: rgb(0, 113, 227);
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin-top: 25px;
+}
+
+.hero_macbookair_more {
+  margin-top: 24px;
+  font-size: 18px;
+}
+
+/* MacBook Pro 스타일 */
+
+.hero_macbookpro_link a:first-child {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 18px;
+  background-color: rgb(0, 113, 227);
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin-top: 25px;
+}
+
+.hero_macbookpro_more {
+  margin-top: 24px;
+  font-size: 18px;
+}
+
+.hero_macbookpro_img figure {
+  width: 647px;
+  height: 232px;
+  background-image: url("img/hero_macbookpro.jpg");
+  background-size: 647px 232px;
+  background-repeat: no-repeat;
+  margin-left: 150px;
+}
+
+/* Macbook 비교하기 스타일 */
+
+#macbook_compare {
+}
+
+.macbook_compare_wrap {
+  width: 1380px;
+  margin: 0 auto 30px;
+  padding-top: 114px;
+  background-color: rgb(242, 242, 242);
+}
+
+.macbook_compare_title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.macbook_compare_link {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.macbook_model_wrap {
+  display: flex;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.macbook_model_1,
+.macbook_model_2,
+.macbook_model_3 {
+  width: 33.33%;
+  padding: 0 20px;
+}
+
+.macbook_model_1 figure {
+  width: 286px;
+  height: 168px;
+  background: url("img/macbookair_model.jpg") no-repeat center;
+  margin: 0 -27px 30px;
+}
+
+.macbook_model_1 h3 {
+  line-height: 31px;
+  margin-bottom: 4px;
+}
+
+.macbook_model_1,
+.macbook_model_2,
+.macbook_model_3 h4 {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+
+.macbook_model_1 ul {
+  margin: 54px 0;
+}
+
+.macbook_model_1 li {
+  line-height: 30px;
+  margin-top: 16px;
+}
+
+.macbook_model_1_link {
+  margin: 60px 0;
+}
+
+.macbook_model_2 figure {
+  width: 286px;
+  height: 168px;
+  background: url("img/macbookpro13_model.jpg") no-repeat center;
+  margin: 0 -27px 30px;
+}
+
+.macbook_model_3 figure {
+  width: 286px;
+  height: 168px;
+  background: url("img/macbookpro16_model.jpg") no-repeat center;
+  margin: 0 -27px 30px;
+}

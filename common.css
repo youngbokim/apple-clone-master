@@ -1,0 +1,344 @@
+/* 초기화 스타일 CSS */
+
+* {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+}
+
+body {
+  color: rgb(29, 29, 31);
+}
+
+@font-face {
+  font-family: "SF Pro KR";
+  font-style: normal;
+  font-weight: 200;
+  src: url(fonts/SFProKRDisplay_light.woff2);
+}
+
+@font-face {
+  font-family: "SF Pro KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/SFProKRDisplay_regular.woff2);
+}
+
+@font-face {
+  font-family: "SF Pro KR";
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/SFProKRDisplay_semibold.woff2);
+}
+
+@font-face {
+  font-family: "SF Pro KR";
+  font-style: normal;
+  font-weight: 800;
+  src: url(fonts/SFProKRDisplay_bold.woff2);
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/sf-pro-display_regular.woff2);
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/sf-pro-display_semibold.woff2);
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 800;
+  src: url(fonts/sf-pro-display_bold.woff2);
+}
+
+/* Typo 스타일 */
+
+h1 {
+}
+
+h2 {
+  font-family: "SF Pro KR", "SF Pro Display", serif;
+  font-size: 56px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 66px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h3 {
+  font-family: "SF Pro KR", "SF Pro Display", serif;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 31px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h4 {
+}
+h5 {
+}
+
+h6 {
+}
+
+p {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16.8px;
+}
+
+.h4_large_40 {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 44px;
+}
+
+.h5_large_21 {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 26px;
+}
+
+.p_large_17 {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 27px;
+}
+
+/* 링크 스타일 */
+
+a:link {
+  text-decoration: none;
+  color: #2997ff;
+}
+a:hover {
+  text-decoration: underline;
+  color: #2997ff;
+}
+a:active {
+  text-decoration: none;
+  color: #2997ff;
+}
+a:visited {
+  text-decoration: none;
+  color: #2997ff;
+}
+
+.text_decoration_none {
+  text-decoration: none;
+}
+
+/* 정렬 스타일 */
+
+.text_align_center {
+  text-align: center;
+}
+
+/* 컬러 관련 스타일 */
+
+.bg_color_white {
+  background-color: white;
+}
+.bg_color_dark {
+  background-color: rgb(19, 19, 19);
+}
+.bg_color_gray_250 {
+  background-color: rgb(250, 250, 250);
+}
+
+.color_white_245 {
+  color: rgb(245, 245, 247);
+}
+.color_gray_134 {
+  color: rgb(134, 134, 139);
+}
+
+/* 여백 관련 스타일 */
+
+.margin_top_6 {
+  margin-top: 6px;
+}
+.margin_top_7 {
+  margin-top: 7px;
+}
+.margin_top_14 {
+  margin-top: 14px;
+}
+.margin_bottom_12 {
+  margin-top: 14px;
+}
+
+/* Header 부분 스타일 */
+
+/* gnb 스타일 */
+
+#gnb {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  height: 44px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav_menu_logo {
+  line-height: 44px;
+  opacity: 0.8;
+}
+
+.nav_menu_logo:hover {
+  opacity: 1;
+}
+
+.nav_menu li {
+  text-decoration: none;
+}
+
+.nav_menu a:link {
+  text-decoration: none;
+}
+
+.nav_menu_item {
+  margin: 0 0 0 0px;
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 44px;
+  color: rgb(245, 245, 247);
+  opacity: 0.8;
+}
+
+.nav_menu_item:hover {
+  opacity: 1;
+}
+
+/* 푸터 부분 스타일 */
+
+footer {
+  background-color: rgb(245, 245, 247);
+}
+
+.footer_wrap {
+  width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.footer_note {
+  padding: 17px 0 11px;
+  border-bottom: 1px solid rgb(210, 210, 215);
+  color: rgb(134, 134, 139);
+}
+.footer_menu {
+  display: flex;
+  padding: 20px 0;
+}
+.footer_menu_column {
+  width: 196px;
+}
+.footer_menu_group {
+  list-style: none;
+  padding: 0;
+
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  color: rgb(81, 81, 84);
+}
+.footer_menu_item {
+  margin: 0 0 6.8px;
+}
+
+/* .footer_menu_item_text { color:green; } */
+
+.footer_menu_group li {
+  margin: 0 0 6.8px;
+  color: rgb(134, 134, 139);
+}
+.footer_menu_group li:first-child {
+  font-weight: 600;
+  color: rgb(29, 29, 31);
+}
+
+.footer_menu_group a {
+  color: rgb(134, 134, 139);
+}
+.footer_menu_group a:hover {
+  color: rgb(81, 81, 84);
+}
+
+.font_weight_600 {
+  font-weight: 600;
+}
+.color_gray_29 {
+  color: rgb(29, 29, 31);
+}
+.footer_contact {
+  border-bottom: 1px solid rgb(210, 210, 215);
+  padding: 0 0 7px;
+  margin: 0 0 8px;
+  color: rgb(134, 134, 139);
+}
+
+.footer_copyright_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_copyright {
+  margin: 5px 0;
+  color: rgb(134, 134, 139);
+}
+
+.footer_copyright a {
+  color: rgb(134, 134, 139);
+  padding: 0 12px 0;
+  border-right: 1px solid rgb(134, 134, 139);
+}
+.footer_copyright a:hover {
+  color: rgb(29, 29, 31);
+}
+
+.footer_address {
+  font-family: "SF Pro KR", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 15px;
+  color: rgb(134, 134, 139);
+  padding: 0 0 20px;
+}
