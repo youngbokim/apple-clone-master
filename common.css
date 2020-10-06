@@ -15,6 +15,7 @@ li {
 
 body {
   color: rgb(29, 29, 31);
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -76,16 +77,16 @@ h2 {
   font-size: 56px;
   font-weight: 600;
   font-style: normal;
-  line-height: 66px;
+  line-height: 46px;
   -webkit-font-smoothing: antialiased;
 }
 
 h3 {
   font-family: "SF Pro KR", "SF Pro Display", serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   font-style: normal;
-  line-height: 31px;
+  line-height: 32px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -196,62 +197,74 @@ a:visited {
 
 /* gnb 스타일 */
 
-#gnb {
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  top: 0;
-  left: 0;
-}
+@media screen and (min-width: 768px) {
+  #gnb {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    padding: 0;
+  }
 
-.nav_menu {
-  display: flex;
-  justify-content: space-between;
-  width: 980px;
-  height: 44px;
-  margin: 0 auto;
-  padding: 0;
-}
+  #gnb_m {
+    display: none;
+  }
 
-.nav_menu_logo {
-  line-height: 44px;
-  opacity: 0.8;
-}
+  .nav_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    height: 44px;
+    margin: 0 auto;
+    padding: 0px;
+  }
 
-.nav_menu_logo:hover {
-  opacity: 1;
-}
+  .nav_menu_logo {
+    line-height: 44px;
+    opacity: 0.8;
+  }
 
-.nav_menu li {
-  text-decoration: none;
-}
+  .nav_menu_logo:hover {
+    opacity: 1;
+  }
 
-.nav_menu a:link {
-  text-decoration: none;
-}
+  .nav_menu li {
+    text-decoration: none;
+  }
 
-.nav_menu_item {
-  margin: 0 0 0 0px;
-  font-family: "SF Pro KR", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 44px;
-  color: rgb(245, 245, 247);
-  opacity: 0.8;
-}
+  .nav_menu a:link {
+    text-decoration: none;
+  }
 
-.nav_menu_item:hover {
-  opacity: 1;
+  .nav_menu_item {
+    margin: 0 0 0 0px;
+    font-family: "SF Pro KR", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 44px;
+    color: rgb(245, 245, 247);
+    opacity: 0.8;
+  }
+
+  .nav_menu_item:hover {
+    opacity: 1;
+  }
 }
+/* .nav_menu a:last-child {
+  display: none;
+  visibility: hidden;
+} */
 
 /* 푸터 부분 스타일 */
-
 footer {
   background-color: rgb(245, 245, 247);
 }
 
 .footer_wrap {
-  width: 1000px;
+  width: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -259,6 +272,7 @@ footer {
   padding: 17px 0 11px;
   border-bottom: 1px solid rgb(210, 210, 215);
   color: rgb(134, 134, 139);
+  word-break: keep-all;
 }
 .footer_menu {
   display: flex;
@@ -293,6 +307,10 @@ footer {
   color: rgb(29, 29, 31);
 }
 
+.footer_menu_group li:first-child span {
+  display: none;
+}
+
 .footer_menu_group a {
   color: rgb(134, 134, 139);
 }
@@ -311,11 +329,14 @@ footer {
   padding: 0 0 7px;
   margin: 0 0 8px;
   color: rgb(134, 134, 139);
+  word-break: keep-all;
 }
 
 .footer_copyright_wrap {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .footer_copyright {
@@ -325,11 +346,17 @@ footer {
 
 .footer_copyright a {
   color: rgb(134, 134, 139);
-  padding: 0 12px 0;
+  padding: 0 10px 0;
   border-right: 1px solid rgb(134, 134, 139);
 }
+
 .footer_copyright a:hover {
   color: rgb(29, 29, 31);
+}
+
+.footer_copyright span {
+  display: block;
+  margin: 10px 0;
 }
 
 .footer_address {
@@ -340,4 +367,258 @@ footer {
   line-height: 15px;
   color: rgb(134, 134, 139);
   padding: 0 0 20px;
+}
+
+.footer_address span {
+  display: block;
+}
+
+/* 모바일 CSS */
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-family: "SF Pro KR", "SF Pro Display", serif;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 39px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h3 {
+    font-family: "SF Pro KR", "SF Pro Display", serif;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 29px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  #gnb_m {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .nav_menu_m {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 44px;
+    margin: 0 auto;
+    padding: 0 17px;
+  }
+
+  .nav_menu_m_logo {
+    line-height: 44px;
+    opacity: 0.8;
+  }
+
+  .nav_menu_m li {
+    text-decoration: none;
+  }
+
+  .nav_menu_m a:link {
+    text-decoration: none;
+  }
+
+  .nav_menu_m_item {
+    margin: 0 0 0 0px;
+    font-family: "SF Pro KR", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 44px;
+    color: rgb(245, 245, 247);
+    opacity: 0.8;
+  }
+
+  .nav_menu_m_item:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  .nav_menu_m_button {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 44px;
+  }
+
+  .nav_menu_m_button span {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    top: 16px;
+    left: 0;
+    border-top: 1px solid white;
+  }
+
+  .nav_menu_m_button span:first-child {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    top: 24px;
+    left: 0;
+    border-top: 1px solid white;
+    transition: all 0.4s;
+  }
+
+  .nav_menu_m_button span:last-child {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    top: 24px;
+    left: 0;
+    border-top: 1px solid white;
+    transition: all 0.4s;
+  }
+
+  .nav_menu_m_item a span {
+    border-top: 2px solid white;
+    width: 16px;
+    height: 1px;
+    border-top: 2px solid white;
+  }
+
+  .nav_menu_m_button:hover span:first-child {
+    transform: rotate(45deg);
+    top: 22px;
+  }
+
+  .nav_menu_m_button:hover span:nth-child(2) {
+    display: none;
+  }
+
+  .nav_menu_m_button:hover span:last-child {
+    transform: rotate(-45deg);
+    top: 22px;
+  }
+
+  /* 푸터 부분 스타일 */
+  footer {
+    background-color: rgb(245, 245, 247);
+  }
+
+  .footer_wrap {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .footer_note {
+    padding: 17px 0 11px;
+    border-bottom: 1px solid rgb(210, 210, 215);
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+
+  .footer_menu_column {
+    width: 100%;
+  }
+
+  .footer_menu_group {
+    list-style: none;
+    height: 25px;
+    overflow: hidden;
+    padding: 0;
+    font-family: "SF Pro KR", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+    color: rgb(81, 81, 84);
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(134, 134, 134, 0.3);
+  }
+
+  .footer_menu_item {
+    margin: 0 0 6.8px;
+  }
+
+  /* .footer_menu_item_text { color:green; } */
+
+  .footer_menu_group li {
+    margin: 0 0 6.8px;
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_menu_group li:first-child {
+    font-weight: 600;
+    color: rgba(81, 81, 84);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+
+  .footer_menu_group li:first-child span {
+    display: block;
+  }
+
+  .footer_menu_group a {
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_menu_group a:hover {
+    color: rgb(81, 81, 84);
+  }
+
+  .font_weight_600 {
+    font-weight: 600;
+  }
+
+  .color_gray_29 {
+    color: rgb(29, 29, 31);
+  }
+
+  .footer_contact {
+    border-bottom: 1px solid rgb(210, 210, 215);
+    padding: 0 0 7px;
+    margin: 0 0 8px;
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_copyright_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer_copyright {
+    margin: 5px 0;
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_copyright a {
+    color: rgb(134, 134, 139);
+    padding: 0 12px 0;
+    border-right: 1px solid rgb(134, 134, 139);
+  }
+  .footer_copyright a:hover {
+    color: rgb(29, 29, 31);
+  }
+
+  .footer_address {
+    font-family: "SF Pro KR", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15px;
+    color: rgb(134, 134, 139);
+    padding: 0 0 20px;
+  }
 }
