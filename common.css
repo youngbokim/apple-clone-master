@@ -259,20 +259,21 @@ a:visited {
 } */
 
 /* 푸터 부분 스타일 */
+
 footer {
   background-color: rgb(245, 245, 247);
 }
 
 .footer_wrap {
-  width: 100%;
+  width: 1000px;
   padding: 0 10px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .footer_note {
   padding: 17px 0 11px;
   border-bottom: 1px solid rgb(210, 210, 215);
   color: rgb(134, 134, 139);
-  word-break: keep-all;
 }
 .footer_menu {
   display: flex;
@@ -305,6 +306,9 @@ footer {
 .footer_menu_group li:first-child {
   font-weight: 600;
   color: rgb(29, 29, 31);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 0;
 }
 
 .footer_menu_group li:first-child span {
@@ -329,14 +333,11 @@ footer {
   padding: 0 0 7px;
   margin: 0 0 8px;
   color: rgb(134, 134, 139);
-  word-break: keep-all;
 }
 
 .footer_copyright_wrap {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  flex-direction: column-reverse;
 }
 
 .footer_copyright {
@@ -346,17 +347,11 @@ footer {
 
 .footer_copyright a {
   color: rgb(134, 134, 139);
-  padding: 0 10px 0;
+  padding: 0 12px 0;
   border-right: 1px solid rgb(134, 134, 139);
 }
-
 .footer_copyright a:hover {
   color: rgb(29, 29, 31);
-}
-
-.footer_copyright span {
-  display: block;
-  margin: 10px 0;
 }
 
 .footer_address {
@@ -367,10 +362,6 @@ footer {
   line-height: 15px;
   color: rgb(134, 134, 139);
   padding: 0 0 20px;
-}
-
-.footer_address span {
-  display: block;
 }
 
 /* 모바일 CSS */
@@ -505,7 +496,8 @@ footer {
     top: 22px;
   }
 
-  /* 푸터 부분 스타일 */
+  /* 모바일 푸터 부분 스타일 */
+
   footer {
     background-color: rgb(245, 245, 247);
   }
@@ -550,8 +542,6 @@ footer {
   .footer_menu_item {
     margin: 0 0 6.8px;
   }
-
-  /* .footer_menu_item_text { color:green; } */
 
   .footer_menu_group li {
     margin: 0 0 6.8px;
@@ -608,6 +598,171 @@ footer {
     padding: 0 12px 0;
     border-right: 1px solid rgb(134, 134, 139);
   }
+
+  .footer_copyright a:hover {
+    color: rgb(29, 29, 31);
+  }
+
+  .footer_address {
+    font-family: "SF Pro KR", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15px;
+    color: rgb(134, 134, 139);
+    padding: 0 0 20px;
+  }
+}
+
+/* 태블릿 해상도 css */
+
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+  h1 {
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 66px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  /* 
+  h4 {
+  }
+  h5 {
+  }
+  h6 {
+  } */
+
+  p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .h4_large_40 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .h5_large_21 {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .p_large_17 {
+    font-family: "SF Pro KR", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 27px;
+  }
+
+  .text_decoration_none {
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: rgb(245, 245, 247);
+  }
+
+  .footer_wrap {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .footer_note {
+    padding: 17px 0 11px;
+    border-bottom: 1px solid rgb(210, 210, 215);
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_menu {
+    display: flex;
+    padding: 20px 0;
+  }
+
+  .footer_menu_column {
+    width: 196px;
+  }
+
+  .footer_menu_group {
+    list-style: none;
+    padding: 0;
+
+    font-family: "SF Pro KR", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+    color: rgb(81, 81, 84);
+  }
+  .footer_menu_item {
+    margin: 0 0 6.8px;
+  }
+
+  /* .footer_menu_item_text { color:green; } */
+
+  .footer_menu_group li {
+    margin: 0 0 6.8px;
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_menu_group li:first-child {
+    font-weight: 600;
+    color: rgb(29, 29, 31);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 0;
+  }
+
+  .footer_menu_group li:first-child span {
+    display: none;
+  }
+
+  .footer_menu_group a {
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_menu_group a:hover {
+    color: rgb(81, 81, 84);
+  }
+
+  .font_weight_600 {
+    font-weight: 600;
+  }
+
+  .color_gray_29 {
+    color: rgb(29, 29, 31);
+  }
+
+  .footer_contact {
+    border-bottom: 1px solid rgb(210, 210, 215);
+    padding: 0 0 7px;
+    margin: 0 0 8px;
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_copyright_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer_copyright {
+    margin: 5px 0;
+    color: rgb(134, 134, 139);
+  }
+
+  .footer_copyright a {
+    color: rgb(134, 134, 139);
+    padding: 0 12px 0;
+    border-right: 1px solid rgb(134, 134, 139);
+  }
+
   .footer_copyright a:hover {
     color: rgb(29, 29, 31);
   }
