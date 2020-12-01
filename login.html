@@ -1,0 +1,222 @@
+<html lang="ko">
+  <head>
+    <title>Apple</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Apple이 제시하는 혁신적인 세상을 만나고, iPhone, iPad, Apple Watch, Mac 등을 구입하는 것은 물론, Apple 액세서리, 엔터테인먼트, 전문가 기기 지원에 대해서도 살펴볼 수 있습니다."
+    />
+    <meta
+      name="keywords"
+      content="iMac,iPhone,iPad, Macbook,Apple TV,macOS,Digital,Smartphone"
+    />
+    <meta name="author" content="Apple Inc." />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/favicon_apple16.png"
+      sizes="16x16"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet"> -->
+  </head>
+
+  <body>
+    <header>
+      <nav id="gnb">
+        <ul class="nav_menu color_white_245">
+          <li class="nav_menu_logo">
+            <a href="index.html"><img src="img/nav_logo.svg" /></a>
+          </li>
+          <a href="mac.html" class="text_decoration_none"
+            ><li class="nav_menu_item">Mac</li></a
+          >
+          <a href="ipad/ipad.html"><li class="nav_menu_item">iPad</li></a>
+          <a href="iphone/iphone.html"><li class="nav_menu_item">iPhone</li></a>
+          <a href="watch/watch.html"> <li class="nav_menu_item">Watch</li></a>
+          <a href="music/music.html"><li class="nav_menu_item">Music</li></a>
+          <a href="support/support.html"
+            ><li class="nav_menu_item">고객지원</li></a
+          >
+          <a href=""
+            ><li class="nav_menu_item"><img src="img/nav_search.svg" /></li
+          ></a>
+          <a href=""
+            ><li class="nav_menu_item"><img src="img/nav_store.svg" /></li>
+          </a>
+        </ul>
+      </nav>
+
+      <nav id="gnb_m">
+        <ul class="nav_menu_m">
+          <a href="#" onclick="gnbOnOff();">
+            <li class="nav_menu_m_button">
+              <span id="nav_menu_m_button_span_1"></span>
+              <span id="nav_menu_m_button_span_2"></span>
+              <span id="nav_menu_m_button_span_3"></span>
+            </li>
+          </a>
+
+          <li class="nav_menu_m_logo">
+            <a href="index.html"><img src="img/nav_logo.svg" /></a>
+          </li>
+          <li class="nav_menu_m_item">
+            <a href=""><img src="img/nav_store.svg" /></a>
+          </li>
+        </ul>
+
+        <ul class="nav_menu_m_open color_white_245">
+          <div class="nav_menu_m_open_search">
+            <input
+              type="search"
+              placeholder="&#128269; &nbsp; apple.com 검색"
+            />
+          </div>
+          <a href="mac/mac.html" class="text_decoration_none"
+            ><li class="nav_menu_item">Mac</li></a
+          >
+          <a href="ipad/ipad.html"><li class="nav_menu_item">iPad</li></a>
+          <a href="iphone/iphone.html"><li class="nav_menu_item">iPhone</li></a>
+          <a href="watch/watch.html"> <li class="nav_menu_item">Watch</li></a>
+          <a href="music/music.html"><li class="nav_menu_item">Music</li></a>
+          <a href="support/support.html"
+            ><li class="nav_menu_item">고객지원</li></a
+          >
+        </ul>
+      </nav>
+
+      <!-- <nav id="gnb_m_open"> 
+
+      <div class="nav_menu_m_open_button" onclick="gnbOff();">
+         <span></span>
+         <span></span>
+      </div>  
+      
+      <ul class="nav_menu_m_open color_white_245"> 
+         <div class="nav_menu_m_open_logo"><a href="index.html"><img src="img/nav_logo.svg"></a></div>
+
+         <div class="nav_menu_m_open_search">
+            <input type="search" placeholder="&#128269; &nbsp; apple.com 검색">
+         </div>
+
+         <a href="mac/mac.html" class="text_decoration_none"><li class="nav_menu_item">Mac</li></a>
+         <a href="ipad/ipad.html"><li class="nav_menu_item">iPad</li></a>
+         <a href="iphone/iphone.html"><li class="nav_menu_item">iPhone</li></a>
+         <a href="watch/watch.html">
+         <li class="nav_menu_item">Watch</li></a>
+         <a href="music/music.html"><li class="nav_menu_item">Music</li></a>
+         <a href="support/support.html"><li class="nav_menu_item">고객지원</li></a>
+         
+      </ul>
+   </nav> -->
+    </header>
+
+    <main>
+      <section class="login">
+        <div class="login_wrap">
+          <h1 class="login_title">로그인.</h1>
+          <form action="login.php" method="POST" id="login_form">
+            <input
+              type="email"
+              id="login_id"
+              name="user_id"
+              placeholder="Apple ID"
+            />
+            <input
+              type="password"
+              id="login_pw"
+              name="user_pw"
+              placeholder="암호"
+            />
+            <p class="login_notice">
+              Apple ID는 iTunes, App Store, iCloud에 로그인할 때 사용하는 이메일
+              주소입니다.
+            </p>
+            <button type="submit" id="login_submit">로그인</button>
+          </form>
+          <p class="login_id_link">
+            <a href="#">Apple ID 또는 암호를 잊으셨습니까?</a>
+          </p>
+          <p class="login_join_link">
+            <a href="#">Apple ID가 없으신가요? 지금 생성.</a>
+          </p>
+        </div>
+
+        <div class="help">
+          <h3>
+            도움이 더 필요하신가요? <a href="#"> 지금 채팅하기</a> 또는
+            080-330-8877 번호로 문의하세요.
+          </h3>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_wrap">
+        <p class="footer_contact">
+          다양한 쇼핑 방법: <a href="">Apple Store를 방문</a>하거나,
+          <a href="">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
+        </p>
+
+        <div class="footer_copyright_wrap">
+          <p class="footer_copyright">
+            <span>Copyright © 2020 Apple x-icon 모든 권리 보유.</span>
+            <a href="">개인정보 처리방침</a> <a href="">웹 사이트 이용 약관</a>
+            <a href="">판매 및 환불</a> <a href="">법적 고지</a>
+            <a href="">사이트 맵</a>
+          </p>
+          <p class="footer_global"><a href="">대한민국</a></p>
+        </div>
+
+        <p class="footer_address">
+          <span>사업자등록번호 : 120-81-84429 |</span>
+          <span>통신판매업신고번호 : 제 2011-서울강남-00810호 |</span>
+          <span
+            >대표이사 : PETER DENWOOD | 주소 : 서울 특별시강남구 영동대로 517
+            |</span
+          >
+          <span>대표전화 : 02-6712-6700 | 팩스 : 02-6928-0000</span>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      var gnbOpenState = 0;
+
+      function gnbOnOff() {
+        if (gnbOpenState == 0) {
+          document.getElementById("gnb_m").style =
+            "height:100%; background:rgba(0,0,0,1);";
+
+          document.getElementById("nav_menu_m_button_span_1").style =
+            " transform: rotate(45deg); top:22px;";
+          document.getElementById("nav_menu_m_button_span_2").style =
+            " visibility: hidden;";
+          document.getElementById("nav_menu_m_button_span_3").style =
+            " transform: rotate(-45deg); top:22px;";
+
+          gnbOpenState = 1;
+        } else {
+          document.getElementById("gnb_m").style =
+            "height:44px; background:rgba(0,0,0,0.8);";
+
+          document.getElementById("nav_menu_m_button_span_1").style =
+            " transform: rotate(0deg); top:16px;";
+          document.getElementById("nav_menu_m_button_span_2").style =
+            " visibility: visible;";
+          document.getElementById("nav_menu_m_button_span_3").style =
+            " transform: rotate(0deg); top:28px;";
+
+          gnbOpenState = 0;
+        }
+      }
+    </script>
+  </body>
+</html>
